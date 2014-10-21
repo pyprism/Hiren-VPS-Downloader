@@ -5,9 +5,8 @@
 <title>Hiren</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    {{ HTML::style('bower/bootstrap/dist/css/bootstrap.min.css') }}
-   {{ HTML::style('bower/Font-Awesome/css/font-awesome.min.css') }}
+   {{ HTML::style('bower/font-awesome/css/font-awesome.min.css') }}
    {{ HTML::style('bower/animate.css/animate.min.css') }}
-   {{ HTML::style('main.css') }}
 <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}">
 </head>
 <body>
@@ -17,7 +16,9 @@
          <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
         @if(!Auth::check())
+        @if( $register )
         <li><a href="{{ url('users/register')}}" class="fa fa-sign-in"> Register</a></li>
+        @endif
         <li><a href="{{ url('users/login') }}" class="fa fa-heart"> Login</a></li>
         @else
         <li><a href="{{ url('users/dashboard')}}" class="fa fa-square-o"> Dashboard</a></li>

@@ -13,5 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('main');
+	return View::make('users.register');
 });
+
+Route::controller('users', 'UserController');

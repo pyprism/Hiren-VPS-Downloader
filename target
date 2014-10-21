@@ -1,0 +1,4 @@
+1.create index view with listing of public files and login button
+2.create a controller to define if login user is admin or others
+3.create e admin view to create Users -> User name , password form field 
+4.create download script using curl

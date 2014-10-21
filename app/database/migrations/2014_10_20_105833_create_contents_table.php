@@ -18,6 +18,8 @@ class CreateContentsTable extends Migration {
             $table->char('title', 200);
             $table->integer('size');
             $table->char('permission');
+            $table->integer('user_id')->unsigned();;
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
 	}

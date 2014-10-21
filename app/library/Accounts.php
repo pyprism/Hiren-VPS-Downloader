@@ -10,7 +10,7 @@ namespace app\library;
 
 class Accounts {
 
-    public function __construct($username, $password){
+    public function register($username, $password){
 
     }
 }
