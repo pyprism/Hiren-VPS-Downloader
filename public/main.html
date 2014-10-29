@@ -2,7 +2,8 @@
 <html ng-app="hiren">
 <head lang="en">
     <meta charset="UTF-8">
-    <base href="/"/>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiren</title>
     <link rel="stylesheet" href="src/bootstrap.min.css"/>
 </head>
@@ -12,17 +13,13 @@
             <a class="navbar-brand" href="/">Hiren</a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-1" >
-            <ng-view>
-
-            </ng-view>
+    <div class="ro">
+        <div class="col-sm-1"  ng-view>
 
         </div>
     </div>
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-route/angular-route.min.js"></script>
     <script src="src/hiren.js"></script>
-    <script src="src/controller.js"></script>
 </body>
 </html>
